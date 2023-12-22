@@ -1,4 +1,5 @@
 #### Purpose:
+
 Simple Java Web Server
 This project is a basic web server implemented in Java that allows users to make simple HTTP GET requests. The server listens on localhost:9000 and provides the following endpoints:
 
@@ -15,7 +16,7 @@ GitHub Repositories: Accessing localhost:9000/github?query=users/amehlhase316/re
 Weather Information: Accessing localhost:9000/weather?city1=nameOfCity1&city2=nameOfCity2 retrieves weather information for the specified cities from OpenWeatherMap API.
 
 Palindrome Check: Accessing localhost:9000/palindrome?str1=text1&str2=text2 performs a palindrome check on the provided strings.
-!(demo.gif)
+![Demo](demo.gif)
 Usage
 Compile and run the WebServer class.
 Access the endpoints using a web browser or a tool like cURL.
