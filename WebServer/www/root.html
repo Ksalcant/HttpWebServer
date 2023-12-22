@@ -1,0 +1,64 @@
+<html>
+<head>
+	<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+</head>
+
+<body>
+<h3>You can make the following GET requests</h3>
+<ul>
+	<li>/file/sample.html -- returns the content of the file sample.html</li>
+	<li>/json -- returns a json of the /random request</a></li>
+	<li>/random -- returns index.html</a></li>
+	<h3>Multiply Protocol</h3>
+	<li>REQUEST:</li>
+	<li>/multiply?num1=3&num2=4 -- returns the value of the the multiplication </a></li>
+	<li>Path: multiply? </li>
+	<li>Body Parameter:  num1(int) - required, you can type num1's value or num2(int)- optional </a></li>
+	<li>RESPONSE:</li>
+	<li>200 OK</a></li>
+	<li>The Result is (result) </li>
+	<li>500 Server error</li>
+	<li>Relax, those are values are too high for me still.</li>
+	<li>400 Bad request!</li>
+	<li> 400: Wrong query, please try queries as follow: 'num1=3&num2=7'</li>
+	<h3>Github Protocol</h3>
+	<li>REQUEST:</li>
+	<li>/github?query=users/amehlhase316/repos -- returns the full_name, ids and ligin of the owner of each repo</a></li>
+	<li>Path: github? </li>
+	<li>Body Parameter:  query(users/amehlhase316/repos) - required</li>
+	<li>RESPONSE:</li>
+	<li>200 OK </li>
+	<li> json with names, ids and login info </li>
+	<li>404 Bad request!</li>
+	<li> Your queries are misesplled, please fix them and try again</li>
+
+	<h3>Weather Protocol</h3>
+	<li>REQUEST:</li>
+	<li>/weather?city1=paterson&city2=Kansas -- returns the weather of one city or two cities at the same time. </a></li>
+	<li>Path: weather? </li>
+	<li>Body Parameter:  city1(String) - required, you can type any city as the value for city1 or city2(String) - optional </a></li>
+	<li>RESPONSE:</li>
+	<li>200 OK</a></li>
+	<li>The current weather in paterson is: Clear</li>
+	<li>The current weather in Kansas is: Clear</a></li>
+	<li>400 Bad request</li>
+	<li>An error occurred while processing the request for weather.</a></li>
+	<li>You need to add 'city1=nameOfCity1&city2=nameOfCity2'</a></li>
+	<h3>Palindrome Protocol</h3>
+	<li>REQUEST:</li>
+	<li>/palindrome?str1=ABA&str2=Abichuelas - returns a text saying if any of the string are palindrome. You can check one string or two. </a></li>
+	<li>Path: palindrome? </li>
+	<li>Body Parameter:  str1(String) - required, you can type any string as the value for str1 or str2(String) - optional </a></li>
+	<li>RESPONSE:</li>
+	<li>200 OK</a></li>
+	<li> (str) is palindrome</li>
+	<li>(str) is not palindrome</li>
+	<li>400 Bad request</li>
+	<li>Error1: An error occurred while processing the request for palindrome.</a></li>
+	<li>404 Bad request</li>
+	<li>Error2: Missing 'str1' and 'str2' parameters in the request for palindrome.'</a></li>
+</ul>
+<h3>File Structure in www (you can use /file/www/FILENAME):</h3>
+${links}
+</body>
+</html>

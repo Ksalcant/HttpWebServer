@@ -1,0 +1,35 @@
+// set as java application
+apply plugin: 'application'
+
+//define main class
+mainClassName = 'SimpleServer'
+
+dependencies {
+    implementation 'org.json:json:20210307'
+    // Other dependencies
+}
+repositories {
+	mavenCentral()
+}
+
+task SimpleWebServer(type: JavaExec) {
+  group 'http'
+  description 'Simple Http Demo'
+
+  classpath = sourceSets.main.runtimeClasspath
+
+  main = 'httpServer.WebServer'
+  standardInput = System.in
+}
+
+task funWebServer(type: JavaExec) {
+  group 'http'
+  description 'Simple Http Demo'
+
+  classpath = sourceSets.main.runtimeClasspath
+
+  main = 'funHttpServer.WebServer'
+  standardInput = System.in
+}
+
+
