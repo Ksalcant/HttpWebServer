@@ -18,16 +18,20 @@ Weather Information: Accessing localhost:9000/weather?city1=nameOfCity1&city2=na
 Palindrome Check: Accessing localhost:9000/palindrome?str1=text1&str2=text2 performs a palindrome check on the provided strings.
 ![Demo](demo.gif)
 Usage
-Compile and run the WebServer class.
-Access the endpoints using a web browser or a tool like cURL.
 Endpoints Details
 The server reads HTTP requests manually.
+
 The /random and /json endpoints serve random images.
+
 The /file/filename endpoint displays raw file content.
+
 The /multiply?num1=3&num2=4 endpoint multiplies two provided numbers.
+
 The /github?query=users/amehlhase316/repos endpoint retrieves GitHub repository information (console output).
+
 The /weather?city1=nameOfCity1&city2=nameOfCity2 endpoint fetches weather information.
-The /palindrome?str1=text1&str2=text2 endpoint checks if provided strings are palindromes.
+
+The /palindrome?str1=text1&str2=text2 endpoint checks if the provided strings are palindromes.
 
 Run through
 
